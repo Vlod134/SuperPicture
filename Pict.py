@@ -1,5 +1,6 @@
 from graph import *
 from tkinter import*
+from random import*
 Sizex = 1000
 Sizey = 1000
 windowSize(Sizex,Sizey)
@@ -15,6 +16,24 @@ def Back_Ground ():
 	rectangle(0,0,Sizex,Sizey*5/14)
 	brushColor(100,100,0)
 	rectangle(0,Sizey*5/14,Sizex,Sizey)
+	penColor(0,0,0)
+	line (Sizex*1/14, 0, Sizex*1/14, Sizey*5/14)
+	line (Sizex*2/14, 0, Sizex*2/14, Sizey*5/14)
+	line (Sizex*3/14, 0, Sizex*3/14, Sizey*5/14)
+	line (Sizex*4/14, 0, Sizex*4/14, Sizey*5/14)
+	line (Sizex*5/14, 0, Sizex*5/14, Sizey*5/14)
+	line (Sizex*6/14, 0, Sizex*6/14, Sizey*5/14)
+	line (Sizex*7/14, 0, Sizex*7/14, Sizey*5/14)
+	line (Sizex*8/14, 0, Sizex*8/14, Sizey*5/14)
+	line (Sizex*9/14, 0, Sizex*9/14, Sizey*5/14)
+	line (Sizex*10/14, 0, Sizex*10/14, Sizey*5/14)
+	line (Sizex*11/14, 0, Sizex*11/14, Sizey*5/14)
+	line (Sizex*12/14, 0, Sizex*12/14, Sizey*5/14)
+	line (Sizex*13/14, 0, Sizex*13/14, Sizey*5/14)
+	for i in range(2000):
+		ux=randint(0, int(Sizex))
+		uy=randint(0, int(Sizey*5/14))
+		line(ux, uy, ux+5, uy+2)
 	Window()
 	
 def Window ():
